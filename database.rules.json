@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "messages": {     
+        ".read": true,
+        ".write": true    
+    },
+      "quotations": {
+         ".read": true,
+        ".write": false     
+      }
+  }
+}

@@ -1,0 +1,49 @@
+
+#header-logo {
+	box-shadow: 3px 3px 7px 1px #f1e767;
+	background: #fff;
+}
+
+#header-logo:hover {
+	background: #a90329 ;					
+				}
+
+.banner-logo , .banner-title {
+	display: inline-block;
+	position: relative;	
+}
+
+.banner-logo {
+	box-shadow: 3px 3px 8px 2px #f1e767
+}
+/* video*/
+
+.card-header {
+	font-weight: bold;
+	color: #1c384e;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+/*---end homepage---*/
+
+.map {
+    margin-top: 5rem;
+    height: 400px;
+    width: 400px;
+    }
+
+.address {
+	margin-top: 5rem;
+	font-size: 1.2rem;
+}
+
+.address .fa {
+	margin-right: 1rem;
+}
+
+alert {
+	margin-top: 3rem;
+}
