@@ -1,6 +1,8 @@
 import ContactUs from './ContactUs';
-import Chart from './Chart';
+import ChartFull from './ChartFull';
+import DiciplineInterface from './DiciplineInterface';
 import DrawingSnap from './DrawingSnap';
+import DrawingRequestForm from './DrawingRequestForm';
 import DrygonConsulting from './DrygonConsulting';
 import Footer from './Footer';
 import Banner from './Banner';
@@ -11,8 +13,10 @@ import QuotationSnap from './QuotationSnap';
 
 export {
     ContactUs,
-    Chart,
+    ChartFull,
+    DiciplineInterface,    
     DrawingSnap,
+    DrawingRequestForm,
     DrygonConsulting,
     Footer,
     Banner,

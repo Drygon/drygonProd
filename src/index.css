@@ -20,12 +20,17 @@ p {
 }
 /*--- Content ---*/
 
-.content {
-  padding: 2rem 0 2rem 0;
+.content {  
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .content .row {  
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.card-title , .card-subtitle {
+  text-align: center;
 }
 /*---Page404---*/
 
@@ -75,7 +80,11 @@ p {
   }
 
   .copyright a {
-    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .copyright li a:hover {
+    color: #DA2713;
   }
 
 /* Icons */

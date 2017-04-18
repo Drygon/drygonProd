@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import { Chart, Footer } from '../components';
+import { DiciplineInterface , Footer, DrawingRequestForm } from '../components';
 
 const DrawingsPage = () => (
 
-    <Container fluid className="content-wrapper">
+    <Container className="content-wrapper" fluid>
         <div className="content">
-            <h1>Dicipline Interface Chart</h1>
-            <Chart />
+            <h1>Dicipline Interface Charts</h1>
+            <DiciplineInterface />
         </div>
-        <Footer />
+        <Footer />     
     </Container>
 );
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Nav, Navbar, NavbarBrand, NavDropdown, DropdownItem, DropdownMenu, DropdownToggle, NavItem, NavLink, NavbarToggler } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
 import RouteWithSubRoutes from './RouteWithSubRoutes';
-import { AboutUsPage, ContactUsPage, DrawingsPage, HomePage} from '../layout';
+import { AboutUsPage, ContactUsPage, DrawingsPage, HomePage, TransmittalPage } from '../layout';
 import HeaderLogo from './HeaderLogo';
 
 const routes = [
@@ -22,10 +22,14 @@ const routes = [
   {
     path: '/drawings',
     component: DrawingsPage,
+  },
+  {
+    path: '/transmittal',
+    component: TransmittalPage,
   }
 ]
 
-const style = { fontWeight: 'bold'}
+const style = { color: "#5cb85c"}
 
 const Links = ({ toggle, toggleDropdown, collapsed, dropdownOpen }) => (
   <div className="header page-header">
@@ -53,9 +57,23 @@ const Links = ({ toggle, toggleDropdown, collapsed, dropdownOpen }) => (
             </DropdownItem>
             </DropdownMenu>
           </NavDropdown>
-          <NavItem>
-            <NavLink to="/drawings" activeClassName="active" activeStyle={style} tag={RRNavLink}>Drawings</NavLink>
-          </NavItem>
+    <NavDropdown isOpen={dropdownOpen} toggle={toggleDropdown} className="bg-primary">
+            <DropdownToggle nav caret >
+              Drawings
+          </DropdownToggle>
+            <DropdownMenu className="bg-primary" >
+              <DropdownItem to="/drawings"
+                activeClassName="active"
+                activeStyle={style}
+                tag={RRNavLink} >Dicipline Interface Chart
+            </DropdownItem>
+              <DropdownItem to="/transmittal"
+                activeClassName="active"
+                activeStyle={style}
+                tag={RRNavLink}>Transmittal
+            </DropdownItem>
+            </DropdownMenu>
+          </NavDropdown>          
           <NavItem>
             <NavLink to="/training" activeClassName="active" activeStyle={style} tag={RRNavLink}>Training</NavLink>
           </NavItem>
@@ -92,7 +110,9 @@ class NavBar extends Component {
 
   toggle() {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
+      dropdownOpen: !this.state.dropdownOpen
+
     });
   }
   

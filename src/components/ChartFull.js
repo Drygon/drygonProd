@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { storage } from '../database/database';
 
 const storageRef = storage.ref()
-const drawingFile = storageRef.child('Drawings/DCI-100-A.pdf')
+const drawingFile = storageRef.child('Drawings/DCI-100-A-Full.pdf')
 
-class DrawingsPage extends Component {
+class ChartFull extends Component {
   constructor() {
     super()
     this.state = ({
@@ -45,4 +45,4 @@ class DrawingsPage extends Component {
   }
 }
 
-export default DrawingsPage;
+export default ChartFull;
