@@ -1,7 +1,7 @@
-
 #header-logo {
 	box-shadow: 3px 3px 7px 1px #f1e767;
 	background: #fff;
+	display: inline-block;
 }
 
 #header-logo:hover {
@@ -10,7 +10,8 @@
 
 .banner-logo , .banner-title {
 	display: inline-block;
-	position: relative;	
+	position: relative;
+	padding: 1rem;	
 }
 
 .banner-logo {

@@ -1,20 +1,15 @@
 import React from 'react';
-import logo from '../images/logo_name_75.png';
-
-const logoStyle = {   
-    position: "relative",    
-    display: "inline",
-    margin: 0,    
-  }
+import logo from '../images/logo_name_50.png';
 
 const spanStyle ={
   fontSize: 0,
   lineHeight: 0,
   position: "absolute",
+  float: "nont",
 }
   
 const HeaderLogo = (props) => (
-  <div style={logoStyle} >      
+  <div >      
     <img src={logo} id="header-logo"
     alt="Logo Drygon Consulting Inc." 
     title="Logo Drygon Consulting Inc." />

@@ -6,8 +6,8 @@ import ContactAddress from './ContactAddress';
 
 
 const ContactUs = () => (
-    <Container className="contact" fluid >
-        <h2 className="container-fluid">CONTACT US</h2>
+    <Container className="contact bg-grey" fluid id="contactus">
+        <h2>CONTACT US</h2>
         <div className="row justify-content-between">         
         <div className="map col-12 col-md-6">
             <MapContainer />

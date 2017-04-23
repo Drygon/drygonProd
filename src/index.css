@@ -1,11 +1,34 @@
+
 body {
-  margin-top: 8rem;
-  padding: 0;  
-  line-height: 1.8;
+  margin-top: 6.5rem;
+  padding: 0; 
+  line-height: 1.8rem;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0; 
+  padding-left: 1rem;
+}
+
+
 .container-fluid {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.contact, #aboutus {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,8 +38,21 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar a {
+.header {
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: 1rem;
+}
+
+.nav li {
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+.active {
+  color: #a90329 ;
 }
 /*--- Content ---*/
 
@@ -32,8 +68,26 @@ p {
 .card-title , .card-subtitle {
   text-align: center;
 }
-/*---Page404---*/
 
+/*---Transmittal---*/
+
+#transmittal h2 {
+  margin-bottom: 2rem;
+}
+
+#transmittal ul {
+  margin-bottom: 2rem;
+}
+
+#terms {
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+
+#transmittal-form button {
+  object-position: center;
+}
+/*---Page404---*/
 #page404 {
   margin-top: 2rem;
   text-align: center;
@@ -181,58 +235,71 @@ ul.contact li:active {
   grid-area: footer;
 }
 
-.content-wrapper {
+.content-wrapper { 
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:   
-    "banner banner banner"
-    "content content content"
-    "footer footer footer"
+    "banner banner banner banner"
+    "content content content content"    
+    "footer footer footer footer"
 }  
 
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 728px) {
 .content-wrapper {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
  grid-template-rows: auto;
  grid-template-areas:   
-    "banner"
+    "banner"    
     "content"
     "footer"
 } 
 
+body {
+  margin-top: 7rem;
+  
+}
+.navbar-nav {
+  margin-left: 1rem;
+  padding-top: .425rem;
+  padding-left: 0.75rem;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .content-wrapper {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
- grid-template-rows: auto;
- grid-template-areas:   
-    "banner banner"
-    "content content"
-    "footer footer"
-} 
-.footer { 
-  font-size: 85%;
+.navbar-nav .nav-item {
+  float: none;
+}
+
+#header-logo {
+  float: left;
+}
+
+.navar-brand, .navbar-nav .nav-item {
+  display: block;
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  position: relative;
+  float: none;
+}
+
+.sidebar { 
+  flex-direction: row; 
+}
+.sidebar a {
+  margin-right: 1rem;
+  z-Index: 2;
 }
 }
 
-@media (min-width: 768px) {
-  .content-wrapper {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
- grid-template-rows: auto;
- grid-template-areas:   
-    "banner banner banner"
-    "content content content"
-    "footer footer footer"
-} 
-}
+
 /*---End Grid area---*/

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import { DiciplineInterface , Footer, DrawingRequestForm } from '../components';
+import { DiciplineInterface , Footer } from '../components';
 
 const DrawingsPage = () => (
 

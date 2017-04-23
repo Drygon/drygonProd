@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Nav, Navbar, NavbarBrand, NavDropdown, DropdownItem, DropdownMenu, DropdownToggle, NavItem, NavLink, NavbarToggler } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
 import RouteWithSubRoutes from './RouteWithSubRoutes';
-import { AboutUsPage, ContactUsPage, DrawingsPage, HomePage, TransmittalPage } from '../layout';
+import { AboutUsPage, DrawingsPage, HomePage, TransmittalPage } from '../layout';
 import HeaderLogo from './HeaderLogo';
 
 const routes = [
@@ -14,10 +14,6 @@ const routes = [
   , {
     path: '/aboutus',
     component: AboutUsPage
-  }
-  , {
-    path: '/contactus',
-    component: ContactUsPage
   },
   {
     path: '/drawings',
@@ -40,23 +36,9 @@ const Links = ({ toggle, toggleDropdown, collapsed, dropdownOpen }) => (
       <NavbarToggler right onClick={toggle} />      
       <Collapse className="navbar-toggleable-md" isOpen={collapsed} navbar id="navbarColor01">
         <Nav className="ml-auto mb-4" navbar>
-          <NavDropdown isOpen={dropdownOpen} toggle={toggleDropdown} className="bg-primary">
-            <DropdownToggle nav caret >
-              About Us
-          </DropdownToggle>
-            <DropdownMenu className="bg-primary" >
-              <DropdownItem to="/aboutus"
-                activeClassName="active"
-                activeStyle={style}
-                tag={RRNavLink} >Drygon Consulting Inc.
-            </DropdownItem>
-              <DropdownItem to="/contactus"
-                activeClassName="active"
-                activeStyle={style}
-                tag={RRNavLink}>Contact Us
-            </DropdownItem>
-            </DropdownMenu>
-          </NavDropdown>
+        <NavItem>
+          <NavLink to="/aboutus" activeClassName="active" activeStyle={style} tag={RRNavLink}>About Us</NavLink>
+        </NavItem>
     <NavDropdown isOpen={dropdownOpen} toggle={toggleDropdown} className="bg-primary">
             <DropdownToggle nav caret >
               Drawings

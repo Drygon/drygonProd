@@ -23,5 +23,5 @@ export {
     NavBar,
     PhotoSnap,
     Page404,
-    QuotationSnap
+    QuotationSnap    
 };
