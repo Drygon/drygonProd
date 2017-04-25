@@ -6,9 +6,10 @@ import ContactAddress from './ContactAddress';
 
 
 const ContactUs = () => (
-    <Container className="contact bg-grey" fluid id="contactus">
-        <h2>CONTACT US</h2>
-        <div className="row justify-content-between">         
+    <Container fluid id="contactus" className="contact bg-grey">
+        <h4>CONTACT US</h4>    
+        <p>You can contact me through the following contact or by filling the form below.</p>     
+        <div className="row justify-content-between">        
         <div className="map col-12 col-md-6">
             <MapContainer />
         </div>
@@ -18,7 +19,7 @@ const ContactUs = () => (
         </div>       
         <div className="contact-form col-12">
             <ContactForm />
-        </div>
+        </div>      
     </Container >
 );
 

@@ -1,5 +1,6 @@
 
 body {
+  position: relative;
   margin-top: 6.5rem;
   padding: 0; 
   line-height: 1.8rem;
@@ -9,22 +10,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
-  top: 0; 
+  position: fixed;
+  top: 7rem;  
   padding-left: 1rem;
+  float: left;
 }
 
-
+.affix {
+  top: 8rem;
+}
 .container-fluid {
   margin: 0;
   padding: 0;
 }
 
-.contact, #aboutus {
-  margin-top: 2rem;
-  margin-bottom: 0rem;
+#contactus, #aboutus {
+  margin-top: 2rem; 
   padding: 1rem;
 
+}
+
+#welcome {
+  margin-bottom: 2rem;
 }
 
 .bg-grey {
@@ -34,9 +41,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
+
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*---Homepage---*/
 
 .header {
   font-family: 'Poppins', sans-serif;
@@ -57,17 +76,37 @@ p {
 /*--- Content ---*/
 
 .content {  
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 1rem;
 }
 
-.content .row {  
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.content .row {   
+  margin-bottom: 1rem;  
 }
 
 .card-title , .card-subtitle {
   text-align: center;
 }
+
+/*---Aboutpage---*/
+
+#aboutus h4, #contactus h4 {
+  text-decoration: underline;
+  line-height: 2rem; 
+  margin-bottom: 1rem;
+}
+
+#aboutus p q {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+#welcome-content {
+  padding: 1rem;
+}
+#welcome #signature {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
+}
+
 
 /*---Transmittal---*/
 
@@ -214,16 +253,11 @@ ul.contact li:active {
  }
  /*---End Jumbotron---*/
 
-/*---Contact page---*/
-.contact {
-  text-align: center;
-}
 
 /*---Grid area---*/
 .sidebar {
   grid-area: sidebar;
 }
-
 .banner {
   grid-area: banner;
 }
@@ -236,8 +270,7 @@ ul.contact li:active {
 }
 
 .content-wrapper { 
-  padding-left: 1rem;
-  padding-right: 1rem;
+ 
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -250,21 +283,25 @@ ul.contact li:active {
 
 
 @media only screen and (max-width: 728px) {
-.content-wrapper {
+.content-wrapper {  
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
  grid-template-rows: auto;
  grid-template-areas:   
-    "banner"    
+    "banner"       
     "content"
     "footer"
 } 
 
 body {
-  margin-top: 7rem;
+  margin-top: 5rem;
   
 }
+.sidebar {
+  display: none
+}
+
 .navbar-nav {
   margin-left: 1rem;
   padding-top: .425rem;
@@ -292,13 +329,6 @@ body {
   float: none;
 }
 
-.sidebar { 
-  flex-direction: row; 
-}
-.sidebar a {
-  margin-right: 1rem;
-  z-Index: 2;
-}
 }
 
 

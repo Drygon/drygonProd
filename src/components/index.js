@@ -7,6 +7,7 @@ import DrygonConsulting from './DrygonConsulting';
 import Footer from './Footer';
 import Banner from './Banner';
 import NavBar from './NavBar';
+import NavSide from './NavSide';
 import Page404 from './Page404';
 import PhotoSnap from './PhotoSnap';
 import QuotationSnap from './QuotationSnap';
@@ -21,6 +22,7 @@ export {
     Footer,
     Banner,
     NavBar,
+    NavSide,
     PhotoSnap,
     Page404,
     QuotationSnap    

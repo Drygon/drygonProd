@@ -102,6 +102,7 @@ alert {
 #transmittal-item, #transmittal-copyright theader tr {
 	text-transform: uppercase;  
 }
+
 table theader tr {
 	font-weight: bold;
 }

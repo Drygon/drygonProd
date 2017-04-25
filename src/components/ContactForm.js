@@ -81,7 +81,7 @@ class ContactForm extends Component {
             <Container fluid>
                 <Form onSubmit={this.onSubmit}>
                     <FormText className="text-center">
-                        Or fill out the form below and press Submit.
+                        Please fill in all the fields and press Send.
                     </FormText>
                     <FormGroup row className={classnames({ 'has-warning': errors.name })}>
                         <Label for="Enter your name" sm={2}>Name:</Label>
@@ -114,7 +114,7 @@ class ContactForm extends Component {
                         </Col>
                     </FormGroup>
                     <FormGroup check row>
-                        <Col sm={{ size: 10, offset: 2 }}>
+                        <Col sm={{ size: 10, offset: 6}}>
                             <Button disabled={this.state.isLoading || this.state.isvalid}
                                 className="btn-outline-primary btn-lg"
                                 type="submit">Send</Button>
