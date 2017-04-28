@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardHeader, CardBlock } from 'reactstrap';
-import { storage } from '../database/database';
-import { getSelect } from '../util/getSelect';
+import { storage } from '../../database/database';
+import { getSelect } from '../../util/getSelect';
 
-const selected = getSelect(10).toString();
+const selected = getSelect(144).toString();
 const storageRef = storage.ref();
 const filePath = "Images/" + selected + ".jpg";
 
@@ -34,14 +33,13 @@ class PhotoSnap extends Component {
   }
 
   render() {
-
     return (
-      <Card block>
-        <CardHeader className="text-center">Photo A Day</CardHeader>
-        <CardBlock>
-          <CardImg src={this.state.url} alt="Photo a day" width="100%" />
-        </CardBlock>
-      </Card>
+      <div className="card text-center"  id="dayphoto">
+      <h5 className="card-header">Photo A Day</h5>
+      <div class="card-block">
+        <img src={this.state.url} alt="Photo a day" />
+      </div>
+      </div>     
     )
   }
 }

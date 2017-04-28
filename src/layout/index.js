@@ -1,13 +1,7 @@
-import AboutUsPage from './AboutUsPage';
-import DrawingsPage from './DrawingsPage';
-import HomePage from './HomePage';
-import Page404Page from './Page404Page';
-import TransmittalPage from './TransmittalPage';
+import Home from './Home';
+import Page404 from './Page404';
 
 export {
-    AboutUsPage,    
-    DrawingsPage,
-    HomePage,
-    Page404Page,
-    TransmittalPage
-};
+    Home,
+    Page404
+}

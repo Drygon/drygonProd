@@ -1,0 +1,24 @@
+const Links = ({ collapsed, toggleNavbar }) => (
+<Navbar className="navbar navbar-toggleable-md navbar-light fixed-top bg-primary">
+      <NavbarToggler right onClick={toggleNavbar} />       
+      <NavLink className="navbar-brand" to="/">
+      <NavLogo />
+      </NavLink>
+      <Collapse className="navbar-collapse" id="navbarDrygon" isOpen={collapsed}>
+        <ul className="navbar-nav mr-auto">     
+          <li className="nav-item active">
+           <NavLink exact activeClassName="active" to="/about" className="nav-link" >About Us</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink activeClassName="active" to="/drawings" className="nav-link" >Drawings</NavLink>
+          </li>
+           <li className="nav-item">
+            <NavLink activeClassName="active" to="/training" className="nav-link" >Training</NavLink>
+          </li>
+           <li className="nav-item">
+            <NavLink activeClassName="active" to="'/services" className="nav-link" >Services</NavLink>
+          </li>          
+        </ul>        
+      </Collapse>
+    </Navbar>
+);
