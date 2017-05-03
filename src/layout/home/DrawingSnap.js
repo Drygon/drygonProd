@@ -7,7 +7,7 @@ const publicID = "Drawings/DCI-100-AB"
 const cloudName = cloudinaryConfig.cloud_name
 
 const DrawingSnap = () => (
-  <div className="card text-center" id="drawing-video">
+  <div className="card text-center btn-outline-primary focus" id="drawing-video">
     <h5 className="card-header">Discipline Interface Charts</h5>
     <div className="card-block">
       <CloudinaryContext cloudName={cloudName}>

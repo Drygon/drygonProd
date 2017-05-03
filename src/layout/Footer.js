@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer className="footer text-center">   
-      <div className="container justify-content-center">      
+      <div className="drygoncontainer justify-content-center">      
         <h2>Get in touch</h2>
          <ul className="contact container-fluid">
           <li><a target="_blank" href="https://www.linkedin.com/in/tony-yep-721b2337/" className="icon fa-linkedin fa-lg fa-border">
@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
       <div className="copyright">
         <ul>
-          <li>&copy; Drygon Consulting Inc. All rights reserved</li>
+          <li>&copy; Copyright 2017 Drygon Consulting Inc. All rights reserved</li>
           <li>Design & Program By: <a href="https://hjzi.github.io/">
             <span>Hui Jie Zi Consult Corp.</span>
           </a></li>

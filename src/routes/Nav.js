@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import { Collapse, NavbarToggler } from 'reactstrap';
 import NavLogo from './NavLogo';
-import { Home, Page404 } from '../layout';
-
-
-const About = () => (<div>About</div>);
-const Drawings = () => (<div>drawings</div>);
+import { About,Drawings, Home, Page404 } from '../layout';
+import DrawingRequestForm from '../layout/drawings/DrawingRequestForm';
 const Training = () => (<div>trainig</div>);
 const Services = () => (<div>services</div>);
 
@@ -18,7 +15,7 @@ const Links = ({ collapsed, toggleNavbar }) => (
       <NavLink className="navbar-brand" to="/">
         <NavLogo />
       </NavLink>
-      <div className="container">
+      <div className="drygoncontainer">
       <Collapse className="navbar-collapse" id="navbarDrygon" isOpen={collapsed}>
         <ul className="navbar-nav mr-auto justify-content-around">     
           <li className="nav-item">
@@ -34,7 +31,7 @@ const Links = ({ collapsed, toggleNavbar }) => (
             className="nav-link" onClick={toggleNavbar}>Training</NavLink>
           </li>
            <li className="nav-item">
-            <NavLink activeClassName="active" to="'/services" 
+            <NavLink activeClassName="active" to="/services" 
             className="nav-link" onClick={toggleNavbar} >Services</NavLink>
           </li>          
         </ul>        
@@ -53,7 +50,7 @@ class Nav extends Component {
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.handleResize = this.handleResize.bind(this);
     this.state = {
-      collapsed: true,
+      collapsed: false,
       windowWidth: window.innerWidth
     };
   }
@@ -64,7 +61,7 @@ class Nav extends Component {
   
 componentWillUnmount() {
     this.setState = {
-      collapsed: true     
+      collapsed: false    
     }
     window.removeEventListener('resize', this.handleResize);
   }
@@ -83,7 +80,7 @@ componentWillUnmount() {
   }
     render() {
         return (
-            <div className="container-fluid">
+            <div className="drygoncontainer">
                 <Links collapsed={this.state.collapsed} toggleNavbar={this.toggleNavbar} />
                 <Switch>
                     <Route exact path="/" component={Home} />
@@ -91,6 +88,7 @@ componentWillUnmount() {
                     <Route path="/drawings" component={Drawings} />
                     <Route path="/training" component={Training} />
                     <Route path="/services" component={Services} />
+                    <Route path="/drawingrequestform" component={DrawingRequestForm} />
                     <Route render={Page404} />
                 </Switch>
             </div>

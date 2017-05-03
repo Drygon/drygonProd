@@ -1,8 +1,3 @@
-.container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   position: relative;
@@ -16,32 +11,38 @@ body {
     background-color: white;
 }
 
+.drygoncontainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-p {
-  font-family: 'Lato', sans-serif;
+.box-shadow {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 /*---Navigation---*/
 nav {
   box-shadow: 0 6px 4px -4px #f1e767;
 }
-nav .container {
+nav .drygoncontainer {
   padding-left: 5rem;
   padding-right: 5rem;
 }
 
-.navbar-nav a {
+#navbarDrygon li a {
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  padding: .5rem;
 }
 #navlogo {  
   background-color: white;
   box-shadow: 3px 3px 8px 2px #f1e767;
-
   vertical-align: left;;
   display: inline-block;
 }
@@ -63,7 +64,7 @@ nav .container {
      width: 100%;
      height: auto;            
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0;   
   }
 .jumbotron > .container-fluid {    
     padding: 3rem 0 2rem 0;	
@@ -78,25 +79,20 @@ nav .container {
   margin-right: 2rem;
 }
 
-#drawing-video, #dayphoto {
-  width: 35rem;
- height: auto;
-
-}
-#quotation, #drawing-video, #dayphoto { 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#quotation, #drawing-video, #dayphoto {  
   margin: 2rem;
 }
 
 #dayphoto img  {
-  width: 30rem;
+  width: 35rem;
   height: auto;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 1rem;
 }
 
 #drawing-video video {
   width: 35rem;
   height: auto;
+  padding: 1rem;
 }
 #banner-logo , #banner-title {
 	display: inline-block;
@@ -106,9 +102,136 @@ nav .container {
 
 #banner-logo {
 	box-shadow: 3px 3px 8px 2px #f1e767;
-
 }
 
+/*---Aboutpage---*/
+#about {
+ 	background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-color: #f7f7f7;
+		background-position: top left, top left;
+		background-repeat: repeat-x, repeat;
+		background-size: 100% 30rem, auto;
+}
+
+p {
+		font-family: 'Raleway', sans-serif;		
+		color: #696969;
+		font-weight: 300;
+		line-height: 2.25em;
+    font-size: 1rem;
+}
+#subnav {
+  margin: 2rem 0 3rem 0;
+  position: relative;
+}
+#subnav a {
+  font-size: 1.2rem;
+}
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-decoration: underline;
+   color: #999;
+}
+.blog-description, address {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+#welcome #signature {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
+}
+
+address .fa {
+	margin-right: 1rem;
+}
+
+
+#contactus form button, #transmittal form button {
+  margin-right: 1rem;
+}
+
+#contactus .alert {
+  margin-top: 1rem;
+}
+/*---Drawings---*/
+
+
+#drawings h1 , #transmittal h1{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+
+#drawings button {
+  margin-top: 2rem;
+}
+#drawings i {
+  margin-left: 2rem;
+}
+#drawings div > .col {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#transmittal .form-check-input {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+#transmittal .form-control-feedback {
+  margin-left: 1rem;
+}
+/*---Page404---*/
+#page404 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#page404 button {
+  text-align: center;
+}
+#page404 .fa::before {
+  margin-right: 0.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 1;
+}
 
 /*--- Footer ---*/
 .footer { 
@@ -209,7 +332,82 @@ ul.contact li:active {
 
 /*---media overwrite---*/
 
-@media (max-width: 575px) {
+@media screen and (max-width: 1680px) {
+#banner-logo {	
+  margin-right: 3rem;
+}
+
+#dayphoto img  {
+  width: 40rem;
+  height: auto;
+  padding: 1.5rem;
+}
+
+#drawing-video video {
+  width: 40rem;
+  height: auto;
+  padding: 1.5rem;
+}
+}
+
+@media screen and (max-width: 1280px) {
+#banner-logo {	
+  margin-right: 3rem;
+}
+
+#dayphoto img  {
+  width: 40rem;
+  height: auto;
+  padding: 1.5rem;
+}
+
+#drawing-video video {
+  width: 40rem;
+  height: auto;
+  padding: 1.5rem;
+}
+}
+
+
+
+@media screen and (max-width: 991px) {
+  
+#dayphoto img  {
+  width: 35rem;
+  height: auto;
+  padding: 1rem;
+}
+
+#drawing-video video {
+  width: 35rem;
+  height: auto;
+  padding: 1rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+   .navbar-nav .nav-item + .nav-item {
+    margin-left: 0rem
+}
+
+#quotation, #drawing-video, #dayphoto {  
+  margin: 1rem;
+}
+
+#dayphoto img  {
+  width: 30rem;
+  height: auto;
+  padding: 0.3rem;
+}
+
+#drawing-video video {
+  width: 30rem;
+  height: auto;
+  padding: 0.3rem;
+}
+}
+
+@media screen and (max-width: 575px) {
    .navbar-nav .nav-item + .nav-item {
     margin-left: 0rem
 }
@@ -222,34 +420,21 @@ ul.contact li:active {
   width: 50%;
   height: auto;  
 }
-}
-@media (min-width: 576px) {
-   .navbar-nav .nav-item + .nav-item {
-    margin-left: 0rem
+
+.blog-title {
+  font-size: 3.5rem;
 }
 
+#dayphoto img  {
+  width: 15rem;
+  height: auto;
+  padding: .3rem;
 }
-@media (max-width: 767px) {
-   .navbar-nav .nav-item + .nav-item {
-    margin-left: 0rem
-}
-}
-@media (min-width: 768px) {
-   
-}
-@media (max-width: 991px) {
-    
-}
-@media (min-width: 992px) {
 
+#drawing-video video {
+  width: 15rem;
+  height: auto;
+  padding: .3rem;
 }
-@media (max-width: 1199px) {
-#banner-logo {	
-  margin-right: 3rem;
-}
-}
-@media (min-width: 1200px) {
-#banner-logo {	
-  margin-right: 3rem;
-}
+
 }

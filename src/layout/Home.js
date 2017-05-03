@@ -3,7 +3,7 @@ import { DrawingSnap, Jumbo,  PhotoSnap, QuotationSnap } from './home';
 import Footer from './Footer';
 
 const Home = () => (
-  <div className="container" id="homepage">
+  <div className="drygoncontainer" id="homepage">
     <Jumbo />
      <div className="container-fluid" id="home-body">
     <div className="col">

@@ -48,10 +48,10 @@ class QuotationSnap extends Component {
     const { author, category, text } = this.state;
 
     return (
-      <div className="card text-center" id="quotation">
+      <div className="card text-center card-outline-primary" id="quotation">
         <h5 className="card-header">Food for Thought - {category}</h5>
         <div className="card-block">
-          <blockquote className="card-blockquote">
+          <blockquote className="blockquote">
             <p>
               <i className="fa fa-quote-left" />&nbsp;&nbsp;
               <span>{text}</span>

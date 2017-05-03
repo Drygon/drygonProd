@@ -34,10 +34,10 @@ class PhotoSnap extends Component {
 
   render() {
     return (
-      <div className="card text-center"  id="dayphoto">
+      <div className="card text-center btn-outline-primary focus"  id="dayphoto">
       <h5 className="card-header">Photo A Day</h5>
-      <div class="card-block">
-        <img src={this.state.url} alt="Photo a day" />
+      <div className="card-block">
+        <img src={this.state.url} alt="Personal shot" />
       </div>
       </div>     
     )

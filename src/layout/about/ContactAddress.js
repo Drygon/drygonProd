@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 
 const ContactAddress = () => (
-  <Container id="contactus">
+  <div className="container-fluid" id="address">
     <address>
      Drygon Consulting Inc.<br />
       Project & Engineering Management<br />
@@ -11,7 +10,7 @@ const ContactAddress = () => (
       <span className="fa fa-mobile"></span>(587) 719-8423<br />
       <span className="fa fa-envelope-o"></span><a href="mailto:drygoninc@gmail.com">drygoninc@gmail.com</a><br />
     </address>
-  </Container>
+  </div>
 );
 
 export default ContactAddress;

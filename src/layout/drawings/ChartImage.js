@@ -4,7 +4,7 @@ import { Card, CardImg, CardTitle,
 
 
 const ChartImage = ({ src, alt, title, subtitle }) => (
-    <Card>
+    <Card className="text-center">
     <CardImg top width="100%" src={src} alt={alt} />
         <CardBlock>
           <CardTitle>{title}</CardTitle> 

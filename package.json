@@ -10,23 +10,24 @@
     "firebase": "^3.7.5",
     "lodash": "^4.17.4",
     "lodash.isempty": "^4.4.0",
+    "prop-types": "^15.5.8",
     "react": "^15.5.3",
     "react-addons-css-transition-group": "^15.5.2",
     "react-addons-transition-group": "^15.5.2",
     "react-dom": "^15.5.3",
-    "react-google-maps": "beta",
     "react-helmet": "^5.0.3",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.0.0",
     "react-sticky": "^5.0.8",
     "reactstrap": "^4.5.0",
     "redux": "^3.6.0",
-    "redux-devtools-extension": "^2.13.0",
+    "redux-form": "^6.6.3",
     "redux-thunk": "^2.2.0",
     "validator": "^7.0.0"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "redux-devtools-extension": "^2.13.0"
   },
   "scripts": {
     "start": "react-scripts start",
