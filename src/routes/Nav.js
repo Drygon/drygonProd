@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import { Collapse, NavbarToggler } from 'reactstrap';
 import NavLogo from './NavLogo';
-import { About,Drawings, Home, Page404 } from '../layout';
+import { About,Drawings, Home, Page404, Services, Training } from '../layout';
 import DrawingRequestForm from '../layout/drawings/DrawingRequestForm';
-const Training = () => (<div>trainig</div>);
-const Services = () => (<div>services</div>);
+
+
 
 
 const Links = ({ collapsed, toggleNavbar }) => (

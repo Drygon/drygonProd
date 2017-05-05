@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  text-transform: uppercase;
+}
 .box-shadow {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
@@ -51,6 +54,10 @@ nav .drygoncontainer {
 	background: #a90329 ;					
 }
 
+.navbar-toggler-right {
+    position: absolute;
+    text-align: right;
+}
 /*Jumbotron*/
 
   .jumbotron {  
@@ -83,17 +90,13 @@ nav .drygoncontainer {
   margin: 2rem;
 }
 
-#dayphoto img  {
-  width: 35rem;
-  height: auto;
+#dayphoto img, #drawing-video video  {
+  width: auto;
+  height: 35rem;
   padding: 1rem;
+  position: relative;
 }
 
-#drawing-video video {
-  width: 35rem;
-  height: auto;
-  padding: 1rem;
-}
 #banner-logo , #banner-title {
 	display: inline-block;
 	position: relative;
@@ -101,7 +104,7 @@ nav .drygoncontainer {
 }
 
 #banner-logo {
-	box-shadow: 3px 3px 8px 2px #f1e767;
+	box-shadow: 3px 3px 8px 2px #f1e767;    
 }
 
 /*---Aboutpage---*/
@@ -184,7 +187,7 @@ address .fa {
 /*---Drawings---*/
 
 
-#drawings h1 , #transmittal h1{
+#drawings h1 , #transmittal h1, #training h1{
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 1.25rem;
@@ -212,6 +215,75 @@ address .fa {
 
 #transmittal .form-control-feedback {
   margin-left: 1rem;
+}
+
+#training .list-group {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#training i, #course i, #agenda i {
+  font-size: 24px;
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+#course, #material {
+  font-family: 'Raleway', sans-serif;
+width: 100%;
+  padding: 1rem;
+  border-radius: 4px ;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+  max-width: calc(100%-20px);
+}
+#agenda {
+  padding: 1rem 0.3rem 1rem 0.3rem;
+}
+#course h4, #material h4 , #agenda h4{
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 2rem;
+}
+#course span, #course span {
+  margin-left: 5px;
+}
+#course h5.text-muted {
+  text-decoration:underline;
+}
+
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 4rem;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+#course ul.checkmark {
+  list-style-position: inside;
+}
+#courseobj ul {
+  list-style: none;
+}
+
+#coursefor ul, #schedule ul, #agenda ul {
+  list-style: circle;
+  list-style-position: inside;
+}
+#instructor ul {
+    list-style: circle;
+}
+#courseobj ul.checkmark li:before {
+  content:"\2713\0020";
+  font-size: 24px;
+  color: green;
+}
+
+#agenda {
+  background: beige url('./images/logo_name_50.png') no-repeat right bottom;
+  width: 100%;
+
 }
 /*---Page404---*/
 #page404 {

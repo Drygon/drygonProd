@@ -10,19 +10,34 @@ const gmailPassword = encodeURIComponent(functions.config().gmail.password);
 const mailTransport = nodemailer.createTransport(
     `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
 
-exports.sendEmailConfirmation = functions.database.ref('/messages/{sender}').onWrite(event => {
-  const snapshot = event.data;  
-  const val = snapshot.val();
-
+exports.sendEmailConfirmation = functions.database.ref('/messages/{uId}').onWrite(event => {
+  const message = event.data.val();  
+  
   const mailOptions = {
     from: '<noreply@firebase.com>',
-    to: 'drygon.web@gmail.com'
-  };
+    to: 'drygon.web@gmail.com',
+    subject: 'new message received',
+    text: JSON.stringify(message)
+  };   
    
-    mailOptions.subject = 'new message received';
-    mailOptions.text = JSON.stringify(val);
     return mailTransport.sendMail(mailOptions).then(() => {
-      console.log('confirmation email sent');
+      console.log('Message confirmation email sent');
+   
+});
+});
+
+exports.sendTransmittalConfirmation = functions.database.ref('/transmittals/{uId}').onWrite(event => {
+  const transmittal = event.data.val();  
+ 
+  const mailOptions = {
+    from: '<noreply@firebase.com>',
+    to: 'drygon.web@gmail.com',
+    subject: 'new transmittal received',
+    text: JSON.stringify(transmittal)
+  };   
+   
+    return mailTransport.sendMail(mailOptions).then(() => {
+      console.log('Transmittal confirmation email sent');
    
 });
 });
