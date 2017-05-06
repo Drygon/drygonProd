@@ -11,5 +11,7 @@ export {
     Home,
     Page404,
     Services,
-    Training    
+    Training, 
 }
+
+export * from './drawings';

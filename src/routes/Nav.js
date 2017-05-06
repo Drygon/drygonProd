@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import { Collapse, NavbarToggler } from 'reactstrap';
 import NavLogo from './NavLogo';
-import { About,Drawings, Home, Page404, Services, Training } from '../layout';
-import DrawingRequestForm from '../layout/drawings/DrawingRequestForm';
+import { About,Drawings, Home, Page404, Services, Training, DrawingRequestForm, ChartDCI100A, ChartDCI100B } from '../layout';
+
 
 
 
@@ -89,6 +89,8 @@ componentWillUnmount() {
                     <Route path="/training" component={Training} />
                     <Route path="/services" component={Services} />
                     <Route path="/drawingrequestform" component={DrawingRequestForm} />
+                    <Route path="/chartdci100a" component={ChartDCI100A} />
+                    <Route path="/chartdci100b" component={ChartDCI100B} />
                     <Route render={Page404} />
                 </Switch>
             </div>

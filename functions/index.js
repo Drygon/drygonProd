@@ -15,7 +15,7 @@ exports.sendEmailConfirmation = functions.database.ref('/messages/{uId}').onWrit
   
   const mailOptions = {
     from: '<noreply@firebase.com>',
-    to: 'drygon.web@gmail.com',
+    to: 'drygon.web@gmail.com , drygoninc@gmail.com',
     subject: 'new message received',
     text: JSON.stringify(message)
   };   
@@ -31,7 +31,7 @@ exports.sendTransmittalConfirmation = functions.database.ref('/transmittals/{uId
  
   const mailOptions = {
     from: '<noreply@firebase.com>',
-    to: 'drygon.web@gmail.com',
+    to: 'drygon.web@gmail.com, drygoninc@gmail.com',
     subject: 'new transmittal received',
     text: JSON.stringify(transmittal)
   };   

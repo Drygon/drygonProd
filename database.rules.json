@@ -4,6 +4,10 @@
         ".read": true,
         ".write": true    
     },
+      "transmittals": {     
+        ".read": true,
+        ".write": true    
+    },
       "quotations": {
          ".read": true,
         ".write": false     

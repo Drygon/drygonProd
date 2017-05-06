@@ -17,7 +17,7 @@ const Footer = () => (
         <ul>
           <li>&copy; Copyright 2017 Drygon Consulting Inc. All rights reserved</li>
           <li>Design & Program By: <a href="https://hjzi.github.io/">
-            <span>Hui Jie Zi Consult Corp.</span>
+            <span>Hui Jie Zi-Yep</span>
           </a></li>
         </ul>
       </div>   
