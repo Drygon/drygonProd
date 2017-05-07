@@ -1,21 +1,64 @@
-import React from 'react';
-import { Video, CloudinaryContext  } from 'cloudinary-react'
-import { cloudinaryConfig } from '../../database/database'
+import React, { Component } from 'react';
+import YouTube from 'react-youtube';
 
-const placeHolder = "Drawings/DCI-100-A"
-const publicID = "Drawings/DCI-100-AB"
-const cloudName = cloudinaryConfig.cloud_name
+const videoId = "QwkfRzWtjJE"
 
-const DrawingSnap = () => (
-  <div className="card text-center btn-outline-primary focus" id="drawing-video">
+class DrawingSnap extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoId: videoId,
+      player:null,
+    };
+    this.onReady = this.onReady.bind(this);
+    this.onPlayVideo = this.onPlayVideo.bind(this);
+    this.onPauseVideo = this.onPauseVideo.bind(this);
+    this.onEnd = this.onEnd.bind(this);
+  }
+
+   onReady(event) {    
+    this.setState({
+      player: event.target,
+    });
+  }
+onPlayVideo() {
+    this.state.player.playVideo();
+  }
+
+  onPauseVideo() {
+    this.state.player.pauseVideo();
+  }
+ 
+ onEnd() {
+   this.state.player.playVideo();
+  }
+  render() {
+
+    const opts = {
+     height: "360",
+     width: "640",     
+    playerVars: {
+        autoplay: 1
+      },
+    frameborder:"0"
+    }
+
+    return (
+ <div className="card text-center btn-outline-primary focus" id="drawing-video">
     <h5 className="card-header">Discipline Interface Charts</h5>
-    <div className="card-block">
-      <CloudinaryContext cloudName={cloudName}>
-        <Video publicId={publicID} poster={{ publicId: placeHolder }} crop="scale" controls autoPlay loop />      
-      </CloudinaryContext>    
+    <div className="card-block">     
+       <YouTube
+        videoId={this.state.videoId} 
+        opts={opts}
+        onReady={this.onReady} 
+        onEnd={this.onEnd}
+        id="dci100ab"/>       
     </div>
   </div>
+    )
+  }
 
-);
+} 
 
 export default DrawingSnap;

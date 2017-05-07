@@ -90,10 +90,13 @@ nav .drygoncontainer {
   margin: 2rem;
 }
 
-#dayphoto img, #drawing-video video  {
-  width: auto;
-  height: 35rem;
+#dayphoto img {
+  width: 640px;
+  height: 100%;
   padding: 1rem;
+  position: relative;
+}
+#dci100ab {
   position: relative;
 }
 
@@ -130,9 +133,11 @@ p {
   margin: 2rem 0 3rem 0;
   position: relative;
 }
-#subnav a {
-  font-size: 1.2rem;
-}
+
+ #subnav a {
+   font: 0.8rem;
+ }
+ 
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 1.25rem;
@@ -422,57 +427,121 @@ ul.contact li:active {
 
 
 /*---media overwrite---*/
-
 @media screen and (max-width: 1680px) {
 #banner-logo {	
   margin-right: 3rem;
 }
-
-#dayphoto img  {
-  width: 40rem;
-  height: auto;
-  padding: 1.5rem;
+#subnav a {
+  font-size: 1.2rem;
+}
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem; 
 }
 
-#drawing-video video {
-  width: 40rem;
-  height: auto;
-  padding: 1.5rem;
+.blog-title { 
+  font-size: 2rem;
 }
+
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;   
+}
+.blog-description, address {
+  font-size: 1.1rem; 
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
 }
 
 @media screen and (max-width: 1280px) {
 #banner-logo {	
   margin-right: 3rem;
 }
-
-#dayphoto img  {
-  width: 40rem;
-  height: auto;
-  padding: 1.5rem;
+#subnav a {
+  font-size: 1.2rem;
+}
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem; 
 }
 
-#drawing-video video {
-  width: 40rem;
-  height: auto;
-  padding: 1.5rem;
-}
+.blog-title { 
+  font-size: 2rem;
 }
 
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;   
+}
+.blog-description, address {
+  font-size: 1.1rem; 
+}
 
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+}
 
 @media screen and (max-width: 991px) {
   
-#dayphoto img  {
-  width: 35rem;
-  height: auto;
-  padding: 1rem;
+#dayphoto img, #dci100ab {
+  width: 540px;
+  height:303px;
+}
+#subnav a {
+  font-size: 1rem;
 }
 
-#drawing-video video {
-  width: 35rem;
-  height: auto;
-  padding: 1rem;
+body {
+   font: 0.9rem;
+ }
+.blog-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;  
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;  
+}
+.blog-description, address {
+  font-size: 1rem; 
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
 }
 }
 
@@ -480,30 +549,79 @@ ul.contact li:active {
    .navbar-nav .nav-item + .nav-item {
     margin-left: 0rem
 }
+p {
+   font-size: 0.9rem;
+ }
 
+#banner-logo {
+  width: 150px;
+  height: 100%;
+}
+#banner-title {
+  width: 400px;
+  height: 100%;
+}
 #quotation, #drawing-video, #dayphoto {  
   margin: 1rem;
 }
-
-#dayphoto img  {
-  width: 30rem;
-  height: auto;
-  padding: 0.3rem;
+#dayphoto img, #dci100ab {
+  width: 340px;
+  height:183px;
 }
 
-#drawing-video video {
-  width: 30rem;
-  height: auto;
-  padding: 0.3rem;
+.blog-header {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;  
 }
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;  
+}
+.blog-description, address {
+  font-size: 0.8rem; 
+}
+
+.blog-post {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.2rem;
+}
+
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 3rem;
+    font-size: 1rem;
+}
+.footer h2 {
+  font-size: 1.5rem;
+}
+
+.copyright li {
+  font-size: 0.9rem;
+}
+
 }
 
 @media screen and (max-width: 575px) {
- body {
-   font: 0.7rem;
+ p {
+   font-size: 0.8rem;
  }
- 
-   .navbar-nav .nav-item + .nav-item {
+
+
+.navbar-nav .nav-item + .nav-item {
     margin-left: 0rem
 }
 .navbar-toggler-right {
@@ -512,24 +630,63 @@ ul.contact li:active {
 }
 
 #banner-logo {
-  width: 50%;
-  height: auto;  
+  width: 100px;
+  height: 100%;  
+}
+#banner-title {
+  width: 300px;
+  height: 100%;
 }
 
 .blog-title {
   font-size: 3.5rem;
 }
 
-#dayphoto img  {
-  width: 15rem;
-  height: auto;
-  padding: .3rem;
+#dayphoto img, #dci100ab {
+  width: 180px;
+  height:142px;
 }
 
-#drawing-video video {
-  width: 15rem;
-  height: auto;
-  padding: .3rem;
+.blog-header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: .2rem solid #eee;
 }
 
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: underline;
+   color: #999;
+}
+.blog-description, address {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 2rem;
+    font-size: 0.9rem;
+}
+.footer h2 {
+  font-size: 1.2rem;
+}
+
+.copyright li {
+  font-size: 0.9rem;
+}
 }
