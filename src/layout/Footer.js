@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
   <footer className="footer text-center">   
       <div className="drygoncontainer justify-content-center">      
-        <h2>Get in touch</h2>
+        <h4>Get in touch</h4>
          <ul className="contact container-fluid">
           <li><a target="_blank" href="https://www.linkedin.com/in/tony-yep-721b2337/" className="icon fa-linkedin fa-lg fa-border">
             <span className="label">linkedin</span>

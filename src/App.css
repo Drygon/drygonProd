@@ -30,11 +30,12 @@ h1 {
 }
 /*---Navigation---*/
 nav {
-  box-shadow: 0 6px 4px -4px #f1e767;
+  box-shadow: 0 6px 4px -4px;
 }
 nav .drygoncontainer {
   padding-left: 5rem;
   padding-right: 5rem;
+  border-radius: 0;
 }
 
 #navbarDrygon li a {
@@ -45,7 +46,7 @@ nav .drygoncontainer {
 }
 #navlogo {  
   background-color: white;
-  box-shadow: 3px 3px 8px 2px #f1e767;
+  box-shadow: 3px 3px 8px 2px;
   vertical-align: left;;
   display: inline-block;
 }
@@ -71,7 +72,8 @@ nav .drygoncontainer {
      width: 100%;
      height: auto;            
     padding-left: 0;
-    padding-right: 0;   
+    padding-right: 0;
+    border-radius: 0;   
   }
 .jumbotron > .container-fluid {    
     padding: 3rem 0 2rem 0;	
@@ -107,7 +109,7 @@ nav .drygoncontainer {
 }
 
 #banner-logo {
-	box-shadow: 3px 3px 8px 2px #f1e767;    
+	box-shadow: 3px 3px 8px 2px ;    
 }
 
 /*---Aboutpage---*/
@@ -123,8 +125,7 @@ nav .drygoncontainer {
 }
 
 p {
-		font-family: 'Raleway', sans-serif;		
-		color: #696969;
+		font-family: 'Raleway', sans-serif;				
 		font-weight: 300;
 		line-height: 2.25em;
     font-size: 1rem;
@@ -135,7 +136,7 @@ p {
 }
 
  #subnav a {
-   font: 0.8rem;
+   font-size: 1.3rem;
  }
  
 .blog-header {
@@ -157,11 +158,9 @@ p {
   font-size: 1.7rem;
   font-weight: normal;
   text-decoration: underline;
-   color: #999;
 }
 .blog-description, address {
   font-size: 1.1rem;
-  color: #999;
 }
 
 .blog-post {
@@ -173,8 +172,7 @@ p {
   font-size: 2.5rem;
 }
 #welcome #signature {
-  font-family: 'Satisfy', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 address .fa {
@@ -265,24 +263,24 @@ width: 100%;
     text-decoration: underline;
 }
 
-#course ul.checkmark {
-  list-style-position: inside;
-}
 #courseobj ul {
-  list-style: none;
+margin-top:0;
+  padding-left: 3em;
+  list-style-type: none;
 }
 
-#coursefor ul, #schedule ul, #agenda ul {
-  list-style: circle;
-  list-style-position: inside;
+#coursefor ul, #schedule ul, #agenda ul, #instructor ul  {
+  list-style: circle; 
 }
-#instructor ul {
-    list-style: circle;
-}
+
 #courseobj ul.checkmark li:before {
+position: absolute;
+margin-left: -1.3em;
+}
+#courseobj ul.checkmark li.tick:before {
   content:"\2713\0020";
   font-size: 24px;
-  color: green;
+  color: darkgreen; 
 }
 
 #agenda {
@@ -313,16 +311,18 @@ input::placeholder, textarea::placeholder {
 /*--- Footer ---*/
 .footer { 
   width: 100%;
-  padding: 4rem 0 0 0; 
-  margin: 4rem 0 0 0;
+  padding: 2rem 0 0 0; 
+  margin: 2rem 0 0 0;
   display: inline-block; 
-  line-height: 2rem;
   background: #1c384e;
   color: #a9b2c0;
   font-family: 'Poppins', sans-serif;
+  position: absolute;
 }
-
-.footer h2 { 
+#service .footer {
+  bottom: 0;
+}
+.footer h4 { 
   text-align: center;
   color: #a9b2c0;
   text-transform: uppercase;  
@@ -336,8 +336,7 @@ input::placeholder, textarea::placeholder {
 
 	.copyright {
 		display: inline-block;	
-    text-align: center;	
-    margin-top: 1rem;    
+    text-align: center;	  
 	}
 
   .copyright li, .copyright a {
@@ -432,7 +431,7 @@ ul.contact li:active {
   margin-right: 3rem;
 }
 #subnav a {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .blog-header {
   padding-top: 2rem;
@@ -508,7 +507,7 @@ ul.contact li:active {
   height:303px;
 }
 #subnav a {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 body {
@@ -619,8 +618,9 @@ p {
  p {
    font-size: 0.8rem;
  }
-
-
+#subnav a {
+  font-size: 1rem;
+}
 .navbar-nav .nav-item + .nav-item {
     margin-left: 0rem
 }

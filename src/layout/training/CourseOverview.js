@@ -16,7 +16,7 @@ const CourseObj = () => (
   <div id="courseobj">
     <ul className="checkmark">
       <span>Course Objectives</span>
-      {courseobj.map((t, i) => <li key={i}>
+      {courseobj.map((t, i) => <li className="tick" key={i}>
       {t.text}
       </li>)}
     </ul>
@@ -27,7 +27,7 @@ const CourseFor = () => (
   <div id="coursefor">
     <ul>
       <span>Who Should Attend This Course?</span>
-      {coursefor.map((t, i) => <li key={i}>{t.text}</li>)}
+      {coursefor.map((t, i) => <li key={i}><div>{t.text}</div></li>)}
     </ul>
   </div>
 );
