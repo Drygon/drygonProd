@@ -16,7 +16,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+ .content-wrapper {
+   max-width: 1200px;
+  margin: 0 auto;
+  }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
@@ -27,6 +30,14 @@ h1 {
 .box-shadow {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: darkblue;
 }
 /*---Navigation---*/
 nav {
@@ -83,10 +94,6 @@ nav .drygoncontainer {
     margin-right: 0;
  }
  /*---End Jumbotron---*/
-#home-body {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
 
 #quotation, #drawing-video, #dayphoto {  
   margin: 2rem;
@@ -102,10 +109,15 @@ nav .drygoncontainer {
   position: relative;
 }
 
+#banner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 #banner-logo , #banner-title {
 	display: inline-block;
 	position: relative;
-	padding: 1rem;	
+	padding: 2rem;	
+  margin: 20px 20px;
 }
 
 #banner-logo {
@@ -139,6 +151,13 @@ p {
    font-size: 1.3rem;
  }
  
+ acronym {
+   text-decoration: none;
+   font-weight: bold;
+ }
+div.card.card-block {
+  padding: 50px;
+}
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 1.25rem;
@@ -218,6 +237,10 @@ address .fa {
 
 #transmittal .form-control-feedback {
   margin-left: 1rem;
+}
+
+#transmittal ul li {
+  text-transform: uppercase;
 }
 
 #training .list-group {
@@ -343,8 +366,8 @@ input::placeholder, textarea::placeholder {
     color: #a9b2c0;
   }
 
-  .copyright a {
-    font-size: 18px;
+  .copyright a, .copyright li {
+    font-size: 12px;
   }
 
   .copyright li a:hover {
@@ -376,8 +399,8 @@ ul.contact li a {
 				transition: background-color .2s ease-in-out;
 				display: block;
 				position: relative;
-				width: 48px;
-				height: 48px;
+				width: 35px;
+				height: 35px;
 				border-radius: 6px;
 				outline: 0;
 				background: #1c384e;
@@ -386,8 +409,8 @@ ul.contact li a {
 
 				ul.contact li a:before {
 					color: #f2f5f3;
-					font-size: 32px;
-					line-height: 48px;
+					font-size: 25px;
+					line-height: 30px;
 				}
 
 			ul.contact li:hover {
@@ -427,12 +450,18 @@ ul.contact li:active {
 
 /*---media overwrite---*/
 @media screen and (max-width: 1680px) {
+
 #banner-logo {	
   margin-right: 3rem;
 }
 #subnav a {
   font-size: 1.3rem;
 }
+
+div.card.card-block {
+  padding: 60px;
+}
+
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 1.25rem;
@@ -464,11 +493,16 @@ ul.contact li:active {
 }
 
 @media screen and (max-width: 1280px) {
+
 #banner-logo {	
   margin-right: 3rem;
 }
 #subnav a {
   font-size: 1.2rem;
+}
+
+div.card.card-block {
+  padding: 50px;
 }
 .blog-header {
   padding-top: 2rem;
@@ -501,7 +535,7 @@ ul.contact li:active {
 }
 
 @media screen and (max-width: 991px) {
-  
+
 #dayphoto img, #dci100ab {
   width: 540px;
   height:303px;
@@ -510,6 +544,9 @@ ul.contact li:active {
   font-size: 1.1rem;
 }
 
+ div.card.card-block {
+  padding: 40px;
+}
 body {
    font: 0.9rem;
  }
@@ -560,14 +597,22 @@ p {
   width: 400px;
   height: 100%;
 }
+
 #quotation, #drawing-video, #dayphoto {  
   margin: 1rem;
 }
-#dayphoto img, #dci100ab {
+#dayphoto img {
+  width: 340px;
+  height:auto;
+}
+
+#dci100ab {
   width: 340px;
   height:183px;
 }
-
+div.card.card-block {
+  padding: 20px;
+}
 .blog-header {
   padding-top: 1rem;
   padding-bottom: 0.8rem;
@@ -604,17 +649,18 @@ p {
 		line-height: 3rem;
     font-size: 1rem;
 }
-.footer h2 {
-  font-size: 1.5rem;
+.footer h4 {
+  font-size: 1.25rem;
 }
 
-.copyright li {
-  font-size: 0.9rem;
+.copyright li, .copyright a {
+  font-size: 0.5rem;
 }
 
 }
 
 @media screen and (max-width: 575px) {
+
  p {
    font-size: 0.8rem;
  }
@@ -638,15 +684,23 @@ p {
   height: 100%;
 }
 
+#drygon-card, #drygon {
+   width: 30%;
+   height: auto;
+ }
 .blog-title {
   font-size: 3.5rem;
 }
 
-#dayphoto img, #dci100ab {
+#dayphoto img {
+  width: 180px;
+  height:auto;
+}
+
+ #dci100ab {
   width: 180px;
   height:142px;
 }
-
 .blog-header {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
@@ -682,11 +736,12 @@ p {
 		line-height: 2rem;
     font-size: 0.9rem;
 }
-.footer h2 {
-  font-size: 1.2rem;
+.footer h4 {
+  font-size: 1rem;
 }
 
-.copyright li {
-  font-size: 0.9rem;
+.copyright li, .copyright a {
+  font-size: 0.5rem;
 }
+
 }

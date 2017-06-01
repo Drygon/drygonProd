@@ -8,7 +8,7 @@ const ContactUs = () => (
     <h4 className="blog-subtitle text-center">CONTACT US</h4>   
    
     <div className="blog-post">      
-        <p>You can contact me through the following contact or by filling the form below.</p>  
+        <p>You can contact me via the following contact or by filling the form below.</p>  
       <div className="row align-items-center">
         <ContactAddress /> 
      </div>

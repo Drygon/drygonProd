@@ -37,7 +37,8 @@ onPlayVideo() {
 
     const opts = {
      height: "360",
-     width: "640",     
+     width: "640",   
+     suggestedRate:0.25,  
     playerVars: {
         autoplay: 1
       },
@@ -45,7 +46,7 @@ onPlayVideo() {
     }
 
     return (
- <div className="card text-center btn-outline-primary focus" id="drawing-video">
+ <div className="card text-center focus" id="drawing-video">
     <h5 className="card-header">Discipline Interface Charts</h5>
     <div className="card-block">     
        <YouTube

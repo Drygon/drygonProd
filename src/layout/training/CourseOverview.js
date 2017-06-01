@@ -6,7 +6,7 @@ const OverviewHeader = () => (
   <div className="row">
     <h4 className="blog-subtitle">Course Overview</h4>   
       <p>
-        To achieve the full benefit from these Discipline Interface Charts, a One-Day Training session will be available through APEGA or an after-degree program at the universities.  In-house facilitation and presentation of this training program by Drygon Consulting Inc. is also available to companies.  If you are interested, please contact Drygon Consulting Inc. directly for pricing and availability and to discuss any customization per your needs.
+        To achieve the full benefit from these Discipline Interface Charts, a One-Day Training session will be available through APEGA or an after-degree program at the universities.  {'\u00A0'} In-house facilitation and presentation of this training program by Drygon Consulting Inc. is also available to companies. {'\u00A0'} If you are interested, please contact Drygon Consulting Inc. directly for pricing and availability and to discuss any customization per your needs.
       </p>
       <p>The training program will be as follows:</p>    
   </div>

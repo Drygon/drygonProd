@@ -3,7 +3,7 @@ import { TrainingHeader, CourseOverview, CourseMaterial } from "./training";
 import Footer from "./Footer";
 
 const TrainingNav = () => (
-  <div className="container" id="subnav">
+  <div className="content-wrapper" id="subnav">
     <ul className="nav nav-tabs nav-fill" role="tablist">
       <li className="nav-item">
         <a

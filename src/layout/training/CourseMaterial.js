@@ -19,7 +19,7 @@ const MaterialDetail = (props) => {
         <ul key={material.item}>
         <span>{material.subject}</span>
         {material.text.map((items) => (
-            <li key={items.item}>{items.description}</li>
+            <li key={items.item}><a href={items.link} target="_blank">{items.description}</a></li>
         ))}
         </ul>
 

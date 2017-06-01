@@ -20,7 +20,7 @@ const ServiceCard = (service) => (
 const ServiceBody = () => (
 
 <div className="card-group">
-{services.map((service,i) => (
+{services.map((service,i) => ( 
   <ServiceCard {...service} key={i} />
 ))}
 </div>

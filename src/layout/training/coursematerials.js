@@ -27,7 +27,8 @@ export const coursematerials = [
       },
       {
         item: 4,
-        description: "Value Improving Practices (VIP’s)"
+        description: "Value Improving Practices (VIP’s)",
+        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
       },
       {
         item: 5,
@@ -71,7 +72,8 @@ export const coursematerials = [
     text: [
       {
         item: 1,
-        description: "Quality Management Works – Presented at 1996 PMI Symposium"
+        description: "Quality Management Works – Presented at 1996 PMI Symposium",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
       },
       {
         item: 2,
@@ -83,7 +85,8 @@ export const coursematerials = [
       },
       {
         item: 4,
-        description: "Safety in Engineering Designs"
+        description: "Safety in Engineering Designs",
+        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
       },
       {
         item: 5,
@@ -139,7 +142,8 @@ export const coursematerials = [
     text: [
       {
         item: 1,
-        description: "Problem Solving Flowsheet"
+        description: "Problem Solving Flowsheet",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FProblem%20Solving%20Flowsheet.pdf?alt=media&token=2e3c562d-8de7-4a63-ad69-41b1264b521d"
       },
       {
         item: 2,
@@ -161,7 +165,8 @@ export const coursematerials = [
     text: [
       {
         item: 1,
-        description: "Cartoon on Work Processes"
+        description: "Cartoon on Work Processes",
+        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FEureka%20Cartoon.pdf?alt=media&token=2c95c3e4-3582-4e69-9298-de09bf91d88e",
       },
       {
         item: 2,

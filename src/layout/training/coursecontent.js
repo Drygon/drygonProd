@@ -42,15 +42,15 @@ text: "Be able to explain in basic terms the various project work phases using t
 
 export const coursefor = [
 {item: 1,
-    text: "Should be a graduate engineer or technical person having worked at least five years in the industry. The more experience, the better the understanding of the concepts."
+    text: "A graduate engineer or technical person having worked at least five years in the industry. The more experience, the better the understanding of the concepts."
 },
 {
     item: 2,
-    text: "Wants a career path as an engineering discipline lead, client team leader, project planner or scheduler, project engineer or project manager."
+    text: "Someone who wants a career path as an engineering discipline lead, client team leader, project planner or scheduler, project engineer or project manager."
 },
 {
     item: 3,
-    text: "People who want to understand the basic fundamentals of project execution and the variables leading to a successful execution."
+    text: "People who want to understand the basic fundamentals of engineering and project execution and the variables leading to a successful execution."
 },
 {
     item: 4,
@@ -58,7 +58,7 @@ export const coursefor = [
 },
 {
     item: 5,
-    text: "People who want to improve their leadership skills by becoming more effective and knowledgeable about project management and execution."
+    text: "People who want to improve their leadership skills by becoming more effective and knowledgeable about project and engineering management and execution."
 }
 ]
 

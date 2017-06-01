@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 const Services = () => (
 
-    <div className="drygoncontainer" id="service" >    
+    <div className="content-wrapper" id="service" >    
     <div className="container">
             <ServiceHeader />
             <ServiceBody />    

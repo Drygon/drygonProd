@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Page404 = () => (
-  <div className="drygoncontainer" id="page404">
+  <div className="content-wrapper" id="page404">
     <h1>Page not found Error 404</h1>    
     <p>The page you requested could not be found. Use your browsers BAck button to go back to the page you have previously come from . Or you could press the button below</p>
     <br />

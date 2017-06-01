@@ -22,7 +22,7 @@ const DrawingRequestTerms = () => (
               <div className="card-block">              
                 <strong> " Copyright disclosure and agreement " </strong>
                 <p>
-                  By accepting the electronic files for these drawings, you have agreed that hte information contained here-in shall be for your own personal use and that they will not be altered or reproduced in any way, or distributed to others for any other purpose.
+                  The Contents and format of these drawings have been developed and designed by Tony Yep and they remain the exclusive property of Drygon Consulting Inc. {'\u00A0'} No changes can be made to any parts of these drawings without the written approval of Tony Yep. These drawings are issued for public information and individual personal use only, and they are not to be reproduced or distributed to others for any other purpose.
                 </p>
               </div>
               </div>
@@ -177,7 +177,7 @@ handleInitialize() {
         name="post"
         type="text"
         component={renderInputField}
-        label="Post Code"
+        label="Postal Code"
       />
       </div>
       </div>       
