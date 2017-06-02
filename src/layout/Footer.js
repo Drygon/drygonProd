@@ -5,11 +5,9 @@ const Footer = () => (
       <div className="drygoncontainer justify-content-center">      
         <h4>Get in touch</h4>
          <ul className="contact container-fluid">
-          <li><a target="_blank" href="https://www.linkedin.com/in/tony-yep-721b2337/" className="icon fa-linkedin fa-lg fa-border">
-            <span className="label">linkedin</span>
+          <li><a target="_blank" href="https://www.linkedin.com/in/tony-yep-721b2337/"><i className="fa fa-linkedin fa-lg fa-border"/>
           </a></li>
-          <li><a target="_blank" href="http://www.youtube.com/channel/UCS-pKWWh_L7wYn8U6nz-zhA" className="icon fa-youtube fa-lg fa-border">
-            <span className="label">youtube</span>
+          <li><a target="_blank" href="http://www.youtube.com/channel/UCS-pKWWh_L7wYn8U6nz-zhA"><i className="fa fa-youtube fa-lg fa-border" />
           </a></li>
         </ul>      
       </div>
