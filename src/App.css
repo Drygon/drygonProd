@@ -1,7 +1,7 @@
 
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 100%;   
 }
 body {
     padding-top: 2rem;
@@ -9,16 +9,25 @@ body {
     line-height: 1.8rem;  
     min-height: 75rem;  
     background-color: white;
+     
+}
+html p {
+  font-weight: bold;
+}
+div p {
+  font-weight: bold;
 }
 
 .drygoncontainer {
   width: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
  .content-wrapper {
    max-width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
   }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
@@ -141,6 +150,7 @@ p {
 		font-weight: 300;
 		line-height: 2.25em;
     font-size: 1rem;
+    font-weight: bold;
 }
 #subnav {
   margin: 2rem 0 3rem 0;
@@ -156,19 +166,23 @@ p {
    font-weight: bold;
  }
 div.card.card-block {
-  padding: 50px;
+  padding: 80px;
 }
+
+
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
+  font-weight: bold;
 }
 
 .blog-title {
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: normal;
+  font-weight: bold;
 }
 
 .blog-subtitle {
@@ -177,21 +191,31 @@ div.card.card-block {
   font-size: 1.7rem;
   font-weight: normal;
   text-decoration: underline;
+  font-weight: bold;
 }
 .blog-description, address {
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .blog-post {
   margin-bottom: 4rem;
+  font-weight: bold;
 }
 
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#welcome p, #about-drygon p, #contactus p, #drawings p {
+  font-weight: bold;
 }
 #welcome #signature {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
 }
 
 address .fa {
@@ -343,7 +367,8 @@ input::placeholder, textarea::placeholder {
   position: absolute;
 }
 #service .footer {
-  bottom: 0;
+  height: 50px;
+ margin-top: -50px;
 }
 .footer h4 { 
   text-align: center;
@@ -459,9 +484,17 @@ ul.contact li:active {
 }
 
 div.card.card-block {
-  padding: 60px;
+  padding: 80px;
 }
 
+#drygon-card {
+   width: 20px;
+   height: auto;
+ }
+ #drygon {
+   width: 15px;
+   height: auto;
+ }
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 1.25rem;
@@ -501,8 +534,16 @@ div.card.card-block {
   font-size: 1.2rem;
 }
 
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
 div.card.card-block {
-  padding: 50px;
+  padding: 60px;
 }
 .blog-header {
   padding-top: 2rem;
@@ -543,6 +584,15 @@ div.card.card-block {
 #subnav a {
   font-size: 1.1rem;
 }
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
 
  div.card.card-block {
   padding: 40px;
@@ -613,6 +663,15 @@ p {
 div.card.card-block {
   padding: 20px;
 }
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
 .blog-header {
   padding-top: 1rem;
   padding-bottom: 0.8rem;
@@ -684,8 +743,12 @@ div.card.card-block {
   height: 100%;
 }
 
-#drygon-card, #drygon {
+#drygon-card {
    width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
    height: auto;
  }
 .blog-title {

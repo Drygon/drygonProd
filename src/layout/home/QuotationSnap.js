@@ -55,6 +55,7 @@ class QuotationSnap extends Component {
             <p>
               <i className="fa fa-quote-left" />&nbsp;&nbsp;
               <span>{text}</span>
+               &nbsp;&nbsp;<i className="fa fa-quote-right" />
             </p>
             <h6 className="card-subtitle">
               <i className="fa fa-minus" />&nbsp;&nbsp;

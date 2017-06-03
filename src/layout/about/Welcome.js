@@ -4,7 +4,7 @@ const Welcome = () => (
   <div className="container-fluid" id="welcome">
     <h4 className="blog-subtitle text-center">Welcome</h4>    
     <div className="row">
-    <div className="blog-post">
+    <div className="blog-post" >
       <p>Dear Reader,</p>
       <p>
         Thanks for visiting my website. {'\u00A0'} There is a quotation which is the basis for why I started this

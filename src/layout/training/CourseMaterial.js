@@ -26,7 +26,7 @@ const MaterialDetail = (props) => {
             )
         })
     return (
-        <ul>
+        <ul style={{fontWeight:"bold"}}>
         {listsubjects}
         </ul>
     )

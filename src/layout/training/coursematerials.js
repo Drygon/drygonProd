@@ -28,7 +28,7 @@ export const coursematerials = [
       {
         item: 4,
         description: "Value Improving Practices (VIP’s)",
-        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
+        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FValue%20Improving%20Practices%20-%20FINAL.pdf?alt=media&token=e5cdcb24-4877-4f7b-98b4-f09d369a8a13",
       },
       {
         item: 5,
@@ -42,7 +42,8 @@ export const coursematerials = [
     text: [
       {
         item: 1,
-        description: "Guiding Principles of Project Execution"
+        description: "Guiding Principles of Project Execution",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FGuiding%20Principles%20of%20Project%20Execution.pdf?alt=media&token=63f8d9ee-361a-4815-a66b-f1f719ebb06e"
       },
       {
         item: 2,
@@ -73,7 +74,7 @@ export const coursematerials = [
       {
         item: 1,
         description: "Quality Management Works – Presented at 1996 PMI Symposium",
-        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FPMI%20QMW%20-%20Article.pdf?alt=media&token=08f35bca-5d64-40ae-8839-7697fb8b07cc",
       },
       {
         item: 2,
@@ -86,7 +87,7 @@ export const coursematerials = [
       {
         item: 4,
         description: "Safety in Engineering Designs",
-        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FQuality%20Approach%20to%20Projects.pdf?alt=media&token=9d8051e0-a695-4df5-9310-a37343a2c724",
+        link: "https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FSafety%20in%20Engineering%20Designs%20-%20Final.pdf?alt=media&token=17813132-0752-425d-a6fd-6ef86ea6b0e2",
       },
       {
         item: 5,
@@ -104,7 +105,8 @@ export const coursematerials = [
     text: [
       {
         item: 1,
-        description: "Words From the Dalai Lama"
+        description: "Words From the Dalai Lama",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FHandout%20-%20Dalai%20Lama.pdf?alt=media&token=040aef68-94c8-4067-a996-339e6f1be36e"
       },
       {
         item: 2,
@@ -120,7 +122,8 @@ export const coursematerials = [
       },
       {
         item: 5,
-        description: "The American Dream"
+        description: "The American Dream",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FThe%20American%20Dream.pdf?alt=media&token=c14bd47f-fe64-4c2c-95d5-3690694de660"
       },
       {
         item: 6,

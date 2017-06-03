@@ -77,14 +77,14 @@ const submit = (values) =>{
     
       <div className="text-center">
         <button
-          className="btn btn-lg btn-outline-primary"
+          className="btn btn-sm btn-outline-primary"
           type="submit"
           disabled={submitting}
         >
           Submit
         </button>
         <button
-          className="btn btn-lg btn-outline-primary"
+          className="btn btn-sm btn-outline-primary"
           type="button"
           disabled={pristine || submitting}
           onClick={reset}

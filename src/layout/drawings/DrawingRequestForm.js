@@ -7,22 +7,22 @@ import { normalizePhone } from '../../util/normalizePhone';
 
 const DrawingRequestTerms = () => (
   <div>
-    <h1 className="blog-title text-center">Transmittal of PDF drawing files</h1>               
+    <h1 className="blog-title text-center">Request for PDF drawing files</h1>               
               <ul>
-                <li>
-                  DWG. DCI-100-A: Discipline Interface Chart during design basis memorandum (DBM) phase
+                <li style={{fontWeight:"bold"}}>
+                  DWG. DCI-100-A: {'\u00A0'} Discipline Interface Chart during design basis memorandum (DBM) phase
                   {" "}
                 </li>
-                <li>
-                  DWG. DCI-100-B: Discipline Interface Chart during EDS & Detailed engineering phase
+                <li style={{fontWeight:"bold"}}>
+                  DWG. DCI-100-B: {'\u00A0'}Discipline Interface Chart during EDS & Detailed engineering phase
                   {" "}
                 </li>
               </ul>
               <div id="terms" className="card card-outline-danger">
               <div className="card-block">              
-                <strong> " Copyright disclosure and agreement " </strong>
-                <p>
-                  The Contents and format of these drawings have been developed and designed by Tony Yep and they remain the exclusive property of Drygon Consulting Inc. {'\u00A0'} No changes can be made to any parts of these drawings without the written approval of Tony Yep. These drawings are issued for public information and individual personal use only, and they are not to be reproduced or distributed to others for any other purpose.
+                <strong style={{textDecoration:"underline"}}> " Copyright Disclosure and Agreement " </strong>
+                <p style={{fontWeight:"bold"}}>
+                  The contents and format of these drawings have been developed and designed by Tony Yep and they remain the exclusive property of Drygon Consulting Inc. {'\u00A0'} No changes can be made to any parts of these drawings without the written approval of Tony Yep. These drawings are issued for public information and individual personal use only, and they are not to be reproduced or distributed to others for any other purpose.
                 </p>
               </div>
               </div>
@@ -96,7 +96,7 @@ handleInitialize() {
             name="agree"
             type="checkbox"
             component={renderCheckField}
-            label="Agree"
+            label="I Agree"
           />
           <div className="row">
           <div className="col col-md-6">          
@@ -186,18 +186,18 @@ handleInitialize() {
         name="message"
         type="textarea"
         component={renderTextAreaField}
-        label="Message"
+        label="Message: Why do you want these drawings?"
       />
       <div className="text-center">
         <button
-          className="btn btn-lg btn-outline-primary"
+          className="btn btn-sm btn-outline-primary"
           type="submit"
           disabled={submitting}
         >
           Submit
         </button>
         <button
-          className="btn btn-lg btn-outline-primary"
+          className="btn btn-sm btn-outline-primary"
           type="button"
           disabled={pristine || submitting}
           onClick={reset}

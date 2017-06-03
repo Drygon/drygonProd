@@ -27,7 +27,7 @@ link={chartB}
 />
             </div>
 </div>
-            <p>These drawings are available to you at no cost, in pdf format, for your own personal use and files.  {'\u00A0'} To receive them, please fill out the Request Form by acknowledging the copyright requirements and stating why you want these drawings.  Once accepted, you will be sent the pdf drawing files via return email.</p>
+            <p>These drawings are available to you at no cost, in vector pdf format, for your own personal use and files.  {'\u00A0'} To receive them, please fill out the Request Form by acknowledging the copyright requirements and stating why you want these drawings.  Once accepted, you will be sent the pdf drawing files via return email.</p>
         <Link className="btn btn-lg btn-block btn-outline-primary" to="/drawingrequestform"> Request Download<i className="fa fa-download"></i></Link>
             
         </div>

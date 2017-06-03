@@ -4,7 +4,7 @@ import { getSelect } from '../../util/getSelect';
 import Spinner from 'react-spinkit';
 
 
-const selected = getSelect(144).toString();
+const selected = getSelect(138).toString();
 const storageRef = storage.ref();
 const filePath = "Images/" + selected + ".jpg";
 
