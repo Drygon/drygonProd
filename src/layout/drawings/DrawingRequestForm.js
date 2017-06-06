@@ -186,7 +186,7 @@ handleInitialize() {
         name="message"
         type="textarea"
         component={renderTextAreaField}
-        label="Message: Why do you want these drawings?"
+        label="Why do you want these drawings ? "
       />
       <div className="text-center">
         <button

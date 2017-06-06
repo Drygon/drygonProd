@@ -366,10 +366,7 @@ input::placeholder, textarea::placeholder {
   font-family: 'Poppins', sans-serif;
   position: absolute;
 }
-#service .footer {
-  height: 50px;
- margin-top: -50px;
-}
+
 .footer h4 { 
   text-align: center;
   color: #a9b2c0;

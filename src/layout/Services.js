@@ -3,14 +3,14 @@ import { ServiceHeader, ServiceBody } from "./services";
 import Footer from "./Footer";
 
 const Services = () => (
-  <div className="drygoncontainer">
-    <div className="content-wrapper" id="service">
+  <div className="drygoncontainer" id="service">
+    <div className="content-wrapper">
       <div className="container">
         <ServiceHeader />
         <ServiceBody />
       </div>
     </div>
-    <Footer />
+    <Footer/>
   </div>
 );
 
