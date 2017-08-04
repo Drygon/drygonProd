@@ -103,6 +103,15 @@ nav .drygoncontainer {
     margin-right: 0;
  }
  /*---End Jumbotron---*/
+#hometag {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#homeguide {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 24px;
+}
 
 #quotation, #drawing-video, #dayphoto {  
   margin: 2rem;
@@ -110,7 +119,7 @@ nav .drygoncontainer {
 
 #dayphoto img {
   width: 640px;
-  height: 100%;
+  height: auto;
   padding: 1rem;
   position: relative;
 }
@@ -574,10 +583,16 @@ div.card.card-block {
 
 @media screen and (max-width: 991px) {
 
-#dayphoto img, #dci100ab {
+#dayphoto img {
+  width: 540px;
+  height:auto;
+}
+
+#dci100ab {
   width: 540px;
   height:303px;
 }
+
 #subnav a {
   font-size: 1.1rem;
 }
@@ -636,6 +651,12 @@ p {
    font-size: 0.9rem;
  }
 
+ #homeguide {
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 16px;
+}
+
 #banner-logo {
   width: 150px;
   height: 100%;
@@ -654,7 +675,7 @@ p {
 }
 
 #dci100ab {
-  width: 340px;
+  width: 325px;
   height:183px;
 }
 div.card.card-block {
@@ -720,6 +741,12 @@ div.card.card-block {
  p {
    font-size: 0.8rem;
  }
+
+  #homeguide {
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 14px;
+}
 #subnav a {
   font-size: 1rem;
 }
@@ -759,7 +786,7 @@ div.card.card-block {
 
  #dci100ab {
   width: 180px;
-  height:142px;
+  height: 120px;
 }
 .blog-header {
   padding-top: 1rem;

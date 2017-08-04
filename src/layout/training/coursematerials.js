@@ -63,7 +63,8 @@ export const coursematerials = [
       },
       {
         item: 6,
-        description: "Rules for Retirement"
+        description: "Rules for Retirement",
+        link:"https://firebasestorage.googleapis.com/v0/b/drygonprod.appspot.com/o/Training%2FRules%20For%20Retirement.pdf?alt=media&token=7c1607f3-4a9b-44be-a5f3-9e9670566b2f"
       }
     ]
   },

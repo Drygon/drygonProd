@@ -1,10 +1,11 @@
 import React from 'react';
-import { DrawingSnap, Jumbo,  PhotoSnap, QuotationSnap } from './home';
+import { DrawingSnap, HomeWord,Jumbo,  PhotoSnap, QuotationSnap } from './home';
 import Footer from './Footer';
 
 const Home = () => (
   <div id="homepage">
-    <Jumbo />
+    <Jumbo />  
+    <HomeWord />      
      <div className="content-wrapper" id="home-body">
     <div className="col">
      <div className="row justify-content-center"></div>

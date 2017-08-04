@@ -18,7 +18,7 @@ const Welcome = () => (
         {'\u00A0'}I have reached a phase in my life where I choose to share my knowledge and experience for others to benefit from.
       </p>
       <p>
-        So if you find some information on my website which may have helped make you better person - technically, or as a leader and project manager, or to even better understand life’s philosophies, then I would have achieved this purpose.
+        So if you find some information on my website which may have helped make you a better person - technically, or as a leader and project manager, or to even better understand life’s philosophies, then I would have achieved this purpose.
         {'\u00A0'}
       </p>
       <p>

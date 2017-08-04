@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { storage } from '../../database/database';
 import { getSelect } from '../../util/getSelect';
+import Spinner from 'react-spinkit';
 
 const selected = getSelect(138).toString();
 const storageRef = storage.ref();
@@ -36,13 +37,15 @@ class PhotoSnap extends Component {
   }
 
   render() {
-     
+     if (this.state.loading) {
+      return  <Spinner name="three-bounce" />
+     }
+
     return (
       <div className="card text-center focus"  id="dayphoto">
       <h5 className="card-header">Photo A Day</h5>
       <div className="card-block">
-      {!this.state.loading && 
-        <img src={this.state.url} alt="Personal shot" /> }
+          <img src={this.state.url} alt="Personal shot" /> 
       </div>
       </div>    
      
