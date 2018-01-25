@@ -10,8 +10,9 @@ const gmailPassword = encodeURIComponent(functions.config().gmail.password);
 const mailTransport = nodemailer.createTransport(
     `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
 
-exports.sendEmailConfirmation = functions.database.ref('/messages/{uId}').onWrite(event => {
-  const message = event.data.val();  
+exports.sendEmailConfirmation = functions.database.ref('/messages/{uId}').onCreate(event => {
+  const snapshot = event.data;
+  const message = snapshot.val();  
   
   const mailOptions = {
     from: '<noreply@firebase.com>',
@@ -20,13 +21,13 @@ exports.sendEmailConfirmation = functions.database.ref('/messages/{uId}').onWrit
     text: JSON.stringify(message)
   };   
    
-    return mailTransport.sendMail(mailOptions).then(() => {
-      console.log('Message confirmation email sent');
+    return mailTransport.sendMail(mailOptions)
+    .then(() => {console.log('Message confirmation email sent');
    
 });
 });
 
-exports.sendTransmittalConfirmation = functions.database.ref('/transmittals/{uId}').onWrite(event => {
+exports.sendTransmittalConfirmation = functions.database.ref('/transmittals/{uId}').onCreate(event => {
   const transmittal = event.data.val();  
  
   const mailOptions = {
@@ -36,8 +37,8 @@ exports.sendTransmittalConfirmation = functions.database.ref('/transmittals/{uId
     text: JSON.stringify(transmittal)
   };   
    
-    return mailTransport.sendMail(mailOptions).then(() => {
-      console.log('Transmittal confirmation email sent');
+    return mailTransport.sendMail(mailOptions)
+    .then(() => {console.log('Transmittal confirmation email sent');
    
 });
 });
