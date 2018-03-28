@@ -17,3 +17,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/database
+/node_modules
+/functions/node_modules
