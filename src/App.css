@@ -807,11 +807,10 @@ div.card.card-block {
   font-size: 1rem;
   font-weight: normal;
   text-decoration: underline;
-   color: #999;
+  
 }
 .blog-description, address {
   font-size: 0.8rem;
-  color: #999;
 }
 
 .blog-post {
