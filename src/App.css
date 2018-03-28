@@ -1,0 +1,834 @@
+
+html {
+  position: relative;
+  min-height: 100%;   
+}
+body {
+    padding-top: 2rem;
+    margin: 4.2rem 0 0 0;
+    line-height: 1.8rem;  
+    min-height: 75rem;  
+    background-color: white;
+     
+}
+html p {
+  font-weight: bold;
+}
+div p {
+  font-weight: bold;
+}
+
+.drygoncontainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+ .content-wrapper {
+   max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+.box-shadow {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: darkblue;
+}
+/*---Navigation---*/
+nav {
+  box-shadow: 0 6px 4px -4px;
+}
+nav .drygoncontainer {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 0;
+}
+
+#navbarDrygon li a {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  padding: .5rem;
+}
+#navlogo {  
+  background-color: white;
+  box-shadow: 3px 3px 8px 2px;
+  vertical-align: left;;
+  display: inline-block;
+}
+
+#navlogo:hover {
+	background: #a90329 ;					
+}
+
+.navbar-toggler-right {
+    position: absolute;
+    text-align: right;
+}
+/*Jumbotron*/
+
+  .jumbotron {  
+     position: relative;     
+     background:url("./images/background.jpg") no-repeat center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     vertical-align: top;
+     width: 100%;
+     height: auto;            
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;   
+  }
+.jumbotron > .container-fluid {    
+    padding: 3rem 0 2rem 0;	
+	  background-color: rgba(159, 83, 166, 0.2);	
+    text-align: center;  
+    margin-left: 0;
+    margin-right: 0;
+ }
+ /*---End Jumbotron---*/
+#hometag {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#homeguide {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 24px;
+}
+
+#quotation, #drawing-video, #dayphoto {  
+  margin: 2rem;
+}
+
+#dayphoto img {
+  width: 640px;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+}
+#dci100ab {
+  position: relative;
+}
+
+#banner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#banner-logo , #banner-title {
+	display: inline-block;
+	position: relative;
+	padding: 2rem;	
+  margin: 20px 20px;
+}
+
+#banner-logo {
+	box-shadow: 3px 3px 8px 2px ;    
+}
+
+/*---Aboutpage---*/
+#about {
+ 	background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("./images/bg01.png");
+		background-color: #f7f7f7;
+		background-position: top left, top left;
+		background-repeat: repeat-x, repeat;
+		background-size: 100% 30rem, auto;
+}
+
+p {
+		font-family: 'Raleway', sans-serif;				
+		font-weight: 300;
+		line-height: 2.25em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#subnav {
+  margin: 2rem 0 3rem 0;
+  position: relative;
+}
+
+ #subnav a {
+   font-size: 1.3rem;
+ }
+ 
+ acronym {
+   text-decoration: none;
+   font-weight: bold;
+ }
+div.card.card-block {
+  padding: 80px;
+}
+
+
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+  font-weight: bold;
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.blog-description, address {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#welcome p, #about-drygon p, #contactus p, #drawings p {
+  font-weight: bold;
+}
+#welcome #signature {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+}
+
+address .fa {
+	margin-right: 1rem;
+}
+
+
+#contactus form button, #transmittal form button {
+  margin-right: 1rem;
+}
+
+#contactus .alert {
+  margin-top: 1rem;
+}
+/*---Drawings---*/
+
+
+#drawings h1 , #transmittal h1, #training h1{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+
+#drawings button {
+  margin-top: 2rem;
+}
+#drawings i {
+  margin-left: 2rem;
+}
+#drawings div > .col {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#transmittal .form-check-input {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+#transmittal .form-control-feedback {
+  margin-left: 1rem;
+}
+
+#transmittal ul li {
+  text-transform: uppercase;
+}
+
+#training .list-group {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#training i, #course i, #agenda i {
+  font-size: 24px;
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+#course, #material {
+  font-family: 'Raleway', sans-serif;
+width: 100%;
+  padding: 1rem;
+  border-radius: 4px ;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+  max-width: calc(100%-20px);
+}
+#agenda {
+  padding: 1rem 0.3rem 1rem 0.3rem;
+}
+#course h4, #material h4 , #agenda h4{
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 2rem;
+}
+#course span, #course span {
+  margin-left: 5px;
+}
+#course h5.text-muted {
+  text-decoration:underline;
+}
+
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 4rem;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+#courseobj ul {
+margin-top:0;
+  padding-left: 3em;
+  list-style-type: none;
+}
+
+#coursefor ul, #schedule ul, #agenda ul, #instructor ul  {
+  list-style: circle; 
+}
+
+#courseobj ul.checkmark li:before {
+position: absolute;
+margin-left: -1.3em;
+}
+#courseobj ul.checkmark li.tick:before {
+  content:"\2713\0020";
+  font-size: 24px;
+  color: darkgreen; 
+}
+
+#agenda {
+  background: beige url('./images/logo_name_50.png') no-repeat right bottom;
+  width: 100%;
+
+}
+/*---Page404---*/
+#page404 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#page404 button {
+  text-align: center;
+}
+#page404 .fa::before {
+  margin-right: 0.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+/*--- Footer ---*/
+.footer { 
+  width: 100%;
+  padding: 2rem 0 0 0; 
+  margin: 2rem 0 0 0;
+  display: inline-block; 
+  background: #1c384e;
+  color: #a9b2c0;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+}
+
+.footer h4 { 
+  text-align: center;
+  color: #a9b2c0;
+  text-transform: uppercase;  
+}
+
+.footer ul {
+  list-style: none;
+  display: inline-block;
+}
+/* Copyright */
+
+	.copyright {
+		display: inline-block;	
+    text-align: center;	  
+	}
+
+  .copyright li, .copyright a {
+    color: #a9b2c0;
+  }
+
+  .copyright a, .copyright li {
+    font-size: 12px;
+  }
+
+  .copyright li a:hover {
+    color: #DA2713;
+  }
+
+/* Icons */
+.icon > .label {
+			display: none;
+		}
+
+ul.contact {
+		cursor: default;    
+	}
+
+ul.contact li {
+			-moz-transition: top .15s ease-in-out;
+			-webkit-transition: top .15s ease-in-out;
+			-ms-transition: top .15s ease-in-out;
+			transition: top .15s ease-in-out;			
+			display: inline-block;
+			margin: 0 0.25rem 0 0.25rem;		
+		}
+
+ul.contact li i {
+				-moz-transition: background-color .2s ease-in-out;
+				-webkit-transition: background-color .2s ease-in-out;
+				-ms-transition: background-color .2s ease-in-out;
+				transition: background-color .2s ease-in-out;
+				display: block;
+				position: relative;
+				width: 35px;
+				height: 35px;
+				border-radius: 6px;
+				outline: 0;
+				background: #1c384e;
+				text-align: center;
+			}
+
+				ul.contact li i:before {
+					color: #f2f5f3;
+					font-size: 25px;
+					line-height: 30px;
+				}
+
+			ul.contact li:hover {
+				top: -5px;
+			}
+      ul.contact li:hover i.fa-linkedin {
+					background-color: #006599;
+				}
+ul.contact li:hover i.fa-youtube {
+					background-color: #DA2713;
+				}
+ul.contact li:active {
+				top: 0;
+			}
+
+.chart-wrapper {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch; 
+	overflow: auto;
+	padding-bottom: 80%;
+}
+
+.chart-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*---media overwrite---*/
+@media screen and (max-width: 1680px) {
+
+#banner-logo {	
+  margin-right: 3rem;
+}
+#subnav a {
+  font-size: 1.3rem;
+}
+
+div.card.card-block {
+  padding: 80px;
+}
+
+#drygon-card {
+   width: 20px;
+   height: auto;
+ }
+ #drygon {
+   width: 15px;
+   height: auto;
+ }
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem; 
+}
+
+.blog-title { 
+  font-size: 2rem;
+}
+
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;   
+}
+.blog-description, address {
+  font-size: 1.1rem; 
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+#banner-logo {	
+  margin-right: 3rem;
+}
+#subnav a {
+  font-size: 1.2rem;
+}
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
+div.card.card-block {
+  padding: 60px;
+}
+.blog-header {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem; 
+}
+
+.blog-title { 
+  font-size: 2rem;
+}
+
+.blog-subtitle {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;   
+}
+.blog-description, address {
+  font-size: 1.1rem; 
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+}
+
+@media screen and (max-width: 991px) {
+
+#dayphoto img {
+  width: 540px;
+  height:auto;
+}
+
+#dci100ab {
+  width: 540px;
+  height:303px;
+}
+
+#subnav a {
+  font-size: 1.1rem;
+}
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
+
+ div.card.card-block {
+  padding: 40px;
+}
+body {
+   font: 0.9rem;
+ }
+.blog-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;  
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;  
+}
+.blog-description, address {
+  font-size: 1rem; 
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+   .navbar-nav .nav-item + .nav-item {
+    margin-left: 0rem
+}
+p {
+   font-size: 0.9rem;
+ }
+
+ #homeguide {
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 16px;
+}
+
+#banner-logo {
+  width: 150px;
+  height: 100%;
+}
+#banner-title {
+  width: 400px;
+  height: 100%;
+}
+
+#quotation, #drawing-video, #dayphoto {  
+  margin: 1rem;
+}
+#dayphoto img {
+  width: 340px;
+  height:auto;
+}
+
+#dci100ab {
+  width: 325px;
+  height:183px;
+}
+div.card.card-block {
+  padding: 20px;
+}
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
+.blog-header {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;  
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;  
+}
+.blog-description, address {
+  font-size: 0.8rem; 
+}
+
+.blog-post {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.2rem;
+}
+
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 3rem;
+    font-size: 1rem;
+}
+.footer h4 {
+  font-size: 1.25rem;
+}
+
+.copyright li, .copyright a {
+  font-size: 0.5rem;
+}
+
+}
+
+@media screen and (max-width: 575px) {
+
+ p {
+   font-size: 0.8rem;
+ }
+
+  #homeguide {
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 14px;
+}
+#subnav a {
+  font-size: 1rem;
+}
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 0rem
+}
+.navbar-toggler-right {
+    position: absolute;
+    text-align: right;
+}
+
+#banner-logo {
+  width: 100px;
+  height: 100%;  
+}
+#banner-title {
+  width: 300px;
+  height: 100%;
+}
+
+#drygon-card {
+   width: 30%;
+   height: auto;
+ }
+ #drygon {
+   width: 20%;
+   height: auto;
+ }
+.blog-title {
+  font-size: 3.5rem;
+}
+
+#dayphoto img {
+  width: 180px;
+  height:auto;
+}
+
+ #dci100ab {
+  width: 180px;
+  height: 120px;
+}
+.blog-header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: .2rem solid #eee;
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.blog-subtitle {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: underline;
+   color: #999;
+}
+.blog-description, address {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+#course ul span, #agenda ul span, #material ul span {
+ font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		line-height: 2rem;
+    font-size: 0.9rem;
+}
+.footer h4 {
+  font-size: 1rem;
+}
+
+.copyright li, .copyright a {
+  font-size: 0.5rem;
+}
+
+}

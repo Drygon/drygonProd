@@ -1,0 +1,145 @@
+/*---Transmittal---*/
+
+#transmittal h2 {
+  margin-bottom: 2rem;
+}
+
+#transmittal ul {
+  margin-bottom: 2rem;
+}
+
+#terms {
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+
+#transmittal-form button {
+  object-position: center;
+}
+
+#chartA, #chartB {
+	width: 20rem;
+	height: auto;
+}
+#chart {
+	max-width: 600rem;
+    max-height: 400rem;
+    overflow: hidden;
+    margin-left: auto !important;
+   margin-right: auto !important;
+   margin: 20px;
+   padding: 20px;
+   border: 5px inset #4f4f4f;
+   -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+     -moz-box-shadow: 4px 4px 14px #4f4f4f;
+          box-shadow: 4px 4px 14px #4f4f4f;
+}
+#chart p {
+	 font-size: 110%;
+}
+.chart-wrapper {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch; 
+	overflow: auto;
+	padding-bottom: 80%;
+}
+
+.chart-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#transmittal-item, #transmittal-copyright theader tr {
+	text-transform: uppercase;  
+}
+
+table theader tr {
+	font-weight: bold;
+}
+/*---Grid area---*/
+.sidebar {
+  grid-area: sidebar;
+}
+.banner {
+  grid-area: banner;
+}
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.content-wrapper { 
+ 
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:   
+    "banner banner banner banner"
+    "content content content content"    
+    "footer footer footer footer"
+}  
+
+
+@media only screen and (max-width: 728px) {
+.content-wrapper {  
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+ grid-template-rows: auto;
+ grid-template-areas:   
+    "banner"       
+    "content"
+    "footer"
+} 
+
+body {
+  margin-top: 5rem;
+  
+}
+.sidebar {
+  display: none
+}
+
+.navbar-nav {
+  margin-left: 1rem;
+  padding-top: .425rem;
+  padding-left: 0.75rem;
+}
+
+.navbar-nav .nav-item {
+  float: none;
+}
+
+#header-logo {
+  float: left;
+}
+
+.navar-brand, .navbar-nav .nav-item {
+  display: block;
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  position: relative;
+  float: none;
+}
+
+}
+
+
+/*---End Grid area---*/
